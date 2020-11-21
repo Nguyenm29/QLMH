@@ -11,7 +11,7 @@ protected:
 	string HangSX;
 	double Gia;
 	int NamSX;
-public:
+public: /// upate 21/11 da update
 	ClassHangHoa(); // Ham tao khong doi
 	ClassHangHoa(string MaHHIn, string TenHHIn, string HangSXIn, double GiaIn, int NamSXIn); // Ham tao co doi
 	~ClassHangHoa(); // Ham huy
