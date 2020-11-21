@@ -20,8 +20,6 @@ void ClassDongHo::Them(ofstream& fileout)
 	fileout.open("DONGHO.TXT", ios_base::app);
 	cout << "\n Nhap thong tin dong ho can them: ";
 	ClassHangHoa::Them(fileout);
-	cout << "\n Nhap gia: "; cin >> this->Gia;
-	cout << "\n Nhap nam san xuat: "; cin >> this->NamSX;
 	cin.ignore();
 	cout << "\n Nhap chat lieu day deo: ";
 	getline(cin, this->ChatLieuDayDeo);
@@ -29,6 +27,7 @@ void ClassDongHo::Them(ofstream& fileout)
 	getline(cin, this->MatDongHo);
 	cout << "\n Nhap chieu dai day: ";
 	cin >> this->ChieuDaiDay;
+	fileout << MaHH << "," << TenHH << "," << HangSX;
 	fileout << "," << ChatLieuDayDeo << "," << MatDongHo << "," << NamSX << " " << Gia << " " << ChieuDaiDay << endl;
 	fileout.close();
 }
@@ -47,11 +46,13 @@ void ClassDongHo::SetInfo(string MaHHIn, string TenHHIn, string HangSXIn, double
 
 void ClassDongHo::HienThi()
 {
-	cout << "\n";
-	cout << this->MaHH << "\t" << this->TenHH << "\t"<< this->HangSX <<"\t"<< this->Gia <<"\t"<< this->NamSX <<"\t"<< this->ChatLieuDayDeo <<"\t"<< this->MatDongHo <<"\t"<< this->ChieuDaiDay;
+	ClassHangHoa::HienThi();
+	cout << "\n Chat lieu day deo: " << this->ChatLieuDayDeo;
+	cout << "\n May dong ho: " << this->MatDongHo;
+	cout << "\n Chieu dai day: " << this->ChieuDaiDay << endl;
 }
 
-string ClassDongHo::getMaHH()
+double ClassDongHo::TinhThue()
 {
-	return this->MaHH;
+	return Gia * 0.1;
 }

@@ -1,8 +1,10 @@
+#include"ClassPhuKien.h"
 #include"ClassMenu.h"
+#include"ClassDienThoai.h"
+#include"ClassLapTop.h"
 int main()
 {
-	ClassPhuKien* HH;
-	HH = new ClassPhuKien();
-
+	ClassMenu a;
+	a.DieuKhien();
 	return 0;
 }

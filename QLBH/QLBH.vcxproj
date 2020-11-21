@@ -19,16 +19,26 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClassDienThoai.h" />
     <ClInclude Include="ClassDongHo.h" />
     <ClInclude Include="ClassHangHoa.h" />
-    <ClInclude Include="ClassMenu.h" />
+    <ClInclude Include="ClassLapTop.h" />
+    <ClInclude Include="ClassMenu.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="ClassPhuKien.h" />
+    <ClInclude Include="ClassTBDienTu.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ClassDienThoai.cpp" />
     <ClCompile Include="ClassDongHo.cpp" />
     <ClCompile Include="ClassHangHoa.cpp" />
-    <ClCompile Include="ClassMenu.cpp" />
+    <ClCompile Include="ClassLapTop.cpp" />
+    <ClCompile Include="ClassMenu.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="ClassPhuKien.cpp" />
+    <ClCompile Include="ClassTBDienTu.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

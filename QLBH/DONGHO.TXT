@@ -1,6 +1,2 @@
-mh001,casio,casio,da,tron,12 45 55
-mh001,casio,casio,da,tron,12 45 89
-mh001,casio,casio,da,tron,12 45 11
-hh03,dell,dell,nhua,vuong,2020 45 44
-2,2,2,2,2,2 2 2
-2,2,2,2,2,2 2 2
+1,1,1,1,1,1 1 1
+mh01,1,1,1,1,1 1 1
